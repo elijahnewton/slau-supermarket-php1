@@ -33,8 +33,9 @@
     $email = $_POST['email'];
     $phone = $_POST['phone'];
 
+
     $id = $_GET["id"];
-    $sql = "UPDATE customers SET `name` = $name, email = $email, phone = $phone WHERE customers.id = $id";
+    $sql = "UPDATE `customers` SET `name` = '$name', `email` = '$email', `phone` = '$phone' WHERE `customers`.`id` = '$id'";
     $update = $conn->query($sql);
 
         

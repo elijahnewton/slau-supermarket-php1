@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
         <h2>Add New Customer</h2>
         <form method="POST">
             <input type="text" name="name" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email Address">
+            <input type="text" name="email" placeholder="Email Address">
             <input type="text" name="phone" placeholder="Phone Number">
             <button type="submit" name="submit">Save Customer</button>
         </form>
